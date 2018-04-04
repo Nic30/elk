@@ -2,6 +2,7 @@
 *.class
 *.project
 *.prefs
+*.classpath
 bin/
 .checkstyle
 .svn/
