@@ -1,6 +1,6 @@
 # About this fork
 
-This fork has only simple cli added to original ELK.
+This fork has only simple CLI added to original ELK.
 
 # Eclipse Layout Kernel (ELK)
 
