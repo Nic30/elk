@@ -1,3 +1,7 @@
+# About this fork
+
+This fork has only simple cli added to original ELK.
+
 # Eclipse Layout Kernel (ELK)
 
 Diagrams and visual languages are a great thing,
