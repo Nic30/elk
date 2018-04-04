@@ -42,6 +42,7 @@
     <module>org.eclipse.elk.graph.text</module>
     <module>org.eclipse.elk.graph.text.ide</module>
     <module>org.eclipse.elk.graph.text.ui</module>
+    <module>org.eclipse.elk.cli</module>
   </modules>
 
 </project>

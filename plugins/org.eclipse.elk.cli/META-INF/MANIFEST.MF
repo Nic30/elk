@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Main-Class: org.eclipse.elk.cli.ElkLayeredCli
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple ELK layered layout CLI
+Bundle-SymbolicName: org.eclipse.elk.cli;singleton:=true
+Bundle-Version: 0.4.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.google.guava;bundle-version="15.0.0",
+ org.eclipse.elk.core,
+ org.eclipse.elk.graph,
+ org.eclipse.elk.alg.layered,
+ org.eclipse.elk.graph.json
+Bundle-Vendor: Eclipse Modeling Project
+Export-Package: org.eclipse.elk.cli
