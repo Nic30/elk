@@ -452,6 +452,9 @@ class MetaDataJvmModelInferrer extends AbstractModelInferrer {
             «IF !algorithm.supportedFeatures.empty»
                 .supportedFeatures(«EnumSet».of(«FOR f : algorithm.supportedFeatures SEPARATOR ', '»«typeRef('org.eclipse.elk.graph.properties.GraphFeature')».«f.toString.toUpperCase»«ENDFOR»))
             «ENDIF»
+            «IF algorithm.validator !== null»
+                .validatorClass(«algorithm.validator».class)
+            «ENDIF»
             .create()
         );
         «FOR support : algorithm.supportedOptions»
@@ -660,7 +663,7 @@ class MetaDataJvmModelInferrer extends AbstractModelInferrer {
     
     private def getDependencyConstantName(MdOptionDependency dependency) {
         val option = dependency.eContainer as MdOption
-        option.constantName + '_DEP_' + dependency.target.constantName
+        option.constantName + '_DEP_' + dependency.target.constantName + '_' + option.dependencies.indexOf(dependency)
     }
     
     private def String toCodeString(String s) {
